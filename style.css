@@ -36,11 +36,11 @@ main {
     text-align: center;
 }
 
-.outcome {
+.outcome, .game-over {
     font-size: 32px;
 }
 
-.outcome-info {
+.outcome-info, .final-result {
     font-size: 20px;
 }
 
@@ -101,7 +101,7 @@ main {
         font-size: 30px;
     }
 
-    .outcome {
+    .outcome, .game-over {
         font-size: 26px;
     }
 
@@ -129,4 +129,19 @@ main {
         margin-inline-start: 0;
         margin-inline-end: 0;
     }
+}
+
+.endgame-window {
+    /* visibility: hidden; */
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
