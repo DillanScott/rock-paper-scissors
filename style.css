@@ -72,16 +72,24 @@ main {
     margin: 20px auto;
 }
 
-.btn-square {
+.btn-square, .btn-rectangle{
     padding: 20px;
     border-radius: 10px;
     background-color: grey;
+    border: none;    border-radius: 10px;
+    background-color: grey;
     border: none;
+    cursor: pointer;
     cursor: pointer;
 }
 
-.btn-square:hover {
+.btn-square:hover, .btn-rectangle:hover {
     background-color: darkgrey;
+}
+
+.btn-rectangle {
+    margin: 10px 0px 3px 0px;
+    padding: 10px 20px;
 }
 
 .primary-footer {
@@ -131,8 +139,8 @@ main {
     }
 }
 
-.endgame-window {
-    /* visibility: hidden; */
+.pop-up {
+    visibility:hidden;
     width: 300px;
     background-color: #555;
     color: #fff;
@@ -141,7 +149,7 @@ main {
     padding: 8px 0;
     position: absolute;
     z-index: 1;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
