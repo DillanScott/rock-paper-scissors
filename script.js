@@ -52,6 +52,7 @@ const rockBtn = document.getElementById("rockBtn");
 const paperBtn = document.getElementById("paperBtn");
 const scissorsBtn = document.getElementById("scissorsBtn");
 
+const greyOverlay = document.getElementById("greyOverlay");
 const endGameWindow = document.getElementById("endGameWindow");
 const playAgainBtn = document.getElementById("playAgainBtn");
 const finalResult = document.getElementById("finalResult");
@@ -64,7 +65,7 @@ playAgainBtn.addEventListener("click", () => location.reload());
 
 function handleClick(playerChoice) {
     if (isGameOver()) {
-        showEndGameWindow();
+        showEndGameScreen();
         console.log("GAME OVER!");
         return;
     }
@@ -77,7 +78,7 @@ function handleClick(playerChoice) {
 
     if (isGameOver()) {
         console.log("GAME OVER!");
-        showEndGameWindow();
+        showEndGameScreen();
     }
 }
 
@@ -122,12 +123,13 @@ function updateScoreboard(winner, playerChoice, computerChoice) {
         ${ computerChoice}`;
 }
 
-function showEndGameWindow() {
+function showEndGameScreen() {
     if (playerScore > computerScore) {
         finalResult.textContent = `You won. The score was ${playerScore} - ${computerScore}`;
     }
     else if (playerScore < computerScore) {
         finalResult.textContent = `You lost. The score was ${playerScore} - ${computerScore}`;
     }
+    greyOverlay.style.visibility = "visible";
     endGameWindow.style.visibility = "visible";
 }

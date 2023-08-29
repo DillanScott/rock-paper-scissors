@@ -140,9 +140,9 @@ main {
 }
 
 .pop-up {
-    visibility:hidden;
+    visibility: hidden;
     width: 300px;
-    background-color: #555;
+    background-color: rgb(28, 28, 70);
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -152,4 +152,17 @@ main {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.grey-overlay {
+    visibility: hidden;
+    background-color: darkgrey;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+    opacity: 40%;
 }
