@@ -36,11 +36,13 @@ main {
     text-align: center;
 }
 
-.outcome, .game-over {
+.outcome,
+.game-over {
     font-size: 32px;
 }
 
-.outcome-info, .final-result {
+.outcome-info,
+.final-result {
     font-size: 20px;
 }
 
@@ -72,18 +74,21 @@ main {
     margin: 20px auto;
 }
 
-.btn-square, .btn-rectangle{
+.btn-square,
+.btn-rectangle {
     padding: 20px;
     border-radius: 10px;
     background-color: grey;
-    border: none;    border-radius: 10px;
+    border: none;
+    border-radius: 10px;
     background-color: grey;
     border: none;
     cursor: pointer;
     cursor: pointer;
 }
 
-.btn-square:hover, .btn-rectangle:hover {
+.btn-square:hover,
+.btn-rectangle:hover {
     background-color: darkgrey;
 }
 
@@ -102,7 +107,7 @@ main {
     gap: 5px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 }
 
 @media (max-width: 550px) {
@@ -110,7 +115,8 @@ main {
         font-size: 30px;
     }
 
-    .outcome, .game-over {
+    .outcome,
+    .game-over {
         font-size: 26px;
     }
 
@@ -158,12 +164,20 @@ main {
 .grey-overlay {
     visibility: hidden;
     background-color: darkgrey;
-    position:absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    height:100%;
-    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
     opacity: 40%;
+}
+
+.fa-github {
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
 }
