@@ -1,3 +1,3 @@
 # rock-paper-scissors
 
-https://dillanscott.github.io/rock-paper-scissors/
+https://dillan-scott.github.io/rock-paper-scissors/
